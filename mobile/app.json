@@ -1,0 +1,66 @@
+{
+  "expo": {
+    "name": "Campus Signal Intelligence",
+    "slug": "campus-signal-intelligence",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "campussignal",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0b1528"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "edu.campus.signal.intelligence",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Campus Signal Intelligence requires camera access to attach photo evidence to campus complaints.",
+        "NSPhotoLibraryUsageDescription": "Campus Signal Intelligence requires photo library access to upload evidence images for campus complaints."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0b1528"
+      },
+      "package": "edu.campus.signal.intelligence",
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to attach evidence to campus complaints.",
+          "cameraPermission": "The app accesses your camera to capture evidence for campus complaints."
+        }
+      ],
+      "./plugins/withCleartextTraffic.js"
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "6a905344-433b-41ac-b10f-99f051e91c4e"
+      }
+    },
+    "owner": "neeraj-team"
+  }
+}

@@ -1,0 +1,41 @@
+.DS_Store
+.env
+.env.local
+.venv
+venv
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+node_modules/
+frontend/dist/
+frontend/.vite/
+*.log
+.idea/
+.vscode/
+
+# Environment and secrets
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+credentials/
+
+# Mobile build artifacts
+.expo/
+android/
+ios/
+
+# Temporary and backup folders
+scratch/
+mobile_backup_sdk52/
+mobile_sdk53_backup/
+mobile_sdk53_failed/
+mobile_sdk53_test/
