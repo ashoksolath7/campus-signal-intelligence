@@ -1,5 +1,4 @@
 fastapi>=0.115.0
-uvicorn[standard]>=0.32.0
 pymongo>=4.10.0
 certifi>=2024.0.0
 python-dotenv>=1.0.1
@@ -7,9 +6,6 @@ pydantic>=2.10.0
 pydantic-settings>=2.6.0
 python-multipart>=0.0.12
 httpx>=0.27.0
-pytest>=8.3.0
-
-# AI stack (installed for later work; not wired into HTTP routes yet)
-google-genai>=1.0.0
-sentence-transformers>=3.0.0
+numpy>=1.26.0
 scikit-learn>=1.5.0
+google-genai>=1.0.0
